@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- ImageView pour le logo de l'application -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/download"
+        android:layout_gravity="center"
+        android:contentDescription="Logo de l'application" />
+
+    <!-- Champ de saisie pour l'UUID -->
+    <EditText
+        android:id="@+id/et_uuid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UUID"
+        android:inputType="text" />
+
+    <!-- Champ de saisie pour Major -->
+    <EditText
+        android:id="@+id/et_major"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Année académique (Major)"
+        android:inputType="number" />
+
+    <!-- Champ de saisie pour Minor -->
+    <EditText
+        android:id="@+id/et_minor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID étudiant (Minor)"
+        android:inputType="number" />
+
+    <!-- Bouton pour démarrer l'émission BLE -->
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Envoyer"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <!-- Bouton pour arrêter l'émission BLE -->
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arrêter"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp" />
+
+    <!-- Texte affichant l'adresse MAC -->
+    <TextView
+        android:id="@+id/tv_mac_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Adresse MAC"
+        android:textSize="14sp" />
+</LinearLayout>
